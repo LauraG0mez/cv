@@ -1,6 +1,8 @@
 # rules
 # -----
 
+all: fr-short en-short
+
 fr-short: cv-fr-short.tex
 	latexmk -xelatex -bibtex $<
 	@echo ""
@@ -13,16 +15,16 @@ en-short: cv-en-short.tex
 
 # dependencies
 # ------------
-cv-fr-short.tex: img/germain.JPG bib/achemso_perso.bst bib/articles.bib
-cv-en-short.tex: img/germain.JPG bib/achemso_perso.bst bib/articles.bib
+cv-fr-short.tex: img/LG.png
+cv-en-short.tex: img/LG.png
 
-# WARNING sauvage clean
+# WARNING
 # ---------------------
 clean:
 	@echo ""
 	@echo "Clean up files"
 	@echo "--------------"
-	rm -vf *.aux *.log *.fls *.fdb_latexmk *.bbl *.out *.blg *.synctex.gz *.xdv
+	rm -vf *.pdf *.aux *.log *.fls *.fdb_latexmk *.bbl *.out *.blg *.synctex.gz *.xdv
 	ls -lrth
 	@echo ""
 	@echo "done"
