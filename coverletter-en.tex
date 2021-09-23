@@ -1,0 +1,156 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{/home/burbanom/Documents/Bunny-CVs/cv/img/LG.png}
+\name{Laura }{Gomez}
+\position{Chef de projet technique{\enskip\cdotp\enskip}Ingénieure en mécatronique et biomédical}
+\address{91 rue du Colonel Fabien, France}
+
+\mobile{(+33) 7 70 49 23 44}
+\email{laura-gomez@gmx.fr}
+%\homepage{www.posquit0.com}
+%\github{posquit0}
+\linkedin{laura-gomez-0a547158}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {FKG Dentaire S.A.}
+  {La Chaux-de-Fonds\\Switzerland}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{R\&D Project Manager}
+% How the letter is opened
+\letteropening{Dear Sir or Madam}
+% How the letter is closed
+\letterclosing{
+I'd be thrilled to learn more about this job opening. Thank you for your time, I look forward to hearing from you. Best Regards,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Laura Gomez~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+%\lettersection{Introduction}
+
+The mouth is the mirror of our health.
+
+During my research Master's in biomedical engineering, I had the chance to do a short intership with dentists. 
+Their subject of research was the impact of a Muscle segment homeobox gene on the dental development. 
+At that time, my aditionnal value was small but I discovered a fascinating subject.
+
+During my career, I had some great experiences as a technical project leader.
+
+
+Establish project timeline and costs based on available resources
+Propose and set up an appropriate project team for each project
+Manage the project teams by organizing and leading project meetings, assigning tasks and deadlines
+to project members, and ensuring follow-up
+Translate product claims and marketing specifications into functional (technical) specifications
+Manage and formalize all product verification and design validation efforts
+Ensure the adequacy of production processes needed for new products
+Report on a regular basis on project progress and related issues to the R\&D Manager and
+Management Team, or if applicable to the ad hoc steering committee
+Setup and maintain project and product documentation
+Supervise projects and maintain documentation related to product changes/improvements.
+Support the Product Managers and Sales force as technical expert, including after the market launch
+Assist the R\&D Manager in scientific/technology and surveillance efforts as well as in the assessment
+of new product and project ideas
+
+
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+
+\end{document}
