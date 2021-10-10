@@ -1,0 +1,133 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\setdefaultlanguage{french}
+\sethyphenation{french}{} % Add words between the {} to avoid them to be cut
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\setmainfont{Lato}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{img/MB.png}
+\name{Laura }{Gomez}
+\position{Ingénieure Systèmes{\enskip\cdotp\enskip}Mécatronique et Biomécanique}
+\address{Antony, France}
+
+\mobile{+ 33 7 70 49 23 44}
+\email{laura-gomez@gmx.fr}
+%\homepage{www.posquit0.com}
+%\github{burbanom}
+\linkedin{laura-gomez-0a547158}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+%% \firstname and \lastname will be used
+%\googlescholar{zPuB-z0AAAAJ}{Mario Burbano}
+% \extrainfo{extra informations}
+
+ \quote{“Les chocs culturels stimulent la créativité.”}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Endago }
+  {Neuchâtel\\Suisse}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Chef de Projet}
+% How the letter is opened
+\letteropening{Monsieur Enzo Raia,}
+% How the letter is closed
+\letterclosing{
+Je vous remercie de l'attention que vous porterez à ma candidature. 
+Veuillez croire, Monsieur, en l’expression de mes sentiments les plus sincères.\\ \\ Bien cordialement,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Laura Gomez~~~·~~~Lettre de motivation}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+%\lettersection{Introduction}
+Passionnée, curieuse et doté d'un esprit analytique, j'aime trouver des solutions pour aider les gens à rester en bonne santé et à améliorer leur quotidien;
+et c'est cette passion qui m'a guidé dans mon choix d'études. Tout d'abord, avec un master en ingénierie mécatronique puis en suivant un second master en ingénierie biomécanique.
+
+J'aime travailler dans le domaine médical et avec des équipes innovantes. Grâce à votre expertise et vos convictions, je suis sûr d'avoir trouvé une excellente entreprise avec laquelle travailler.
+%Ce qui m'attire chez X, c'est le grand nombre de solutions que vous développez pour garder les gens en mouvement. Des implants crâniens aux vis de pied, vous innovez dans le domaine orthopédique pour améliorer la vie des gens.
+Ma principale expérience dans le médical fût chez Air Liquide Medical System, où j'ai travaillé sur des machines d'assistance respiratoire, ainsi qu'au cours de mes stages au sein de laboratoires dans le cadre de mon master recherche international dans le biomédical.
+Mais c'est principalement au cours de ma mission chez Zodiac que j'ai eu la chance de manager une équipe pour l'aspect technique du projet.
+Ma position me permettait d'avoir une vision globale du projet et je savais donc pour chaque problématique bousculant le planning et projet, qui serait impacté et les conséquences sur la suite du projet.
+Je cherchais alors à comprendre les raisons puis j'écoutais les solutions proposées par les personnes concernées et leurs arguments.
+Une fois toutes les billes en main, je pouvais rediriger les tâches en expliquant la décision et prévenir les personnes en bout de chaîne des futurs impacts.
+
+Les aspects humains qui m'ont semblé indispensables sont la communication claire sur les objectifs, la performance visée ainsi que les attentes individuelles tout en encourageant la coopération.
+
+Très adaptable, méthodique et proactive, vous pourrez compter sur moi pour porter des projets dans un environnement aux métiers transverses et au contexte multiculturel.
+
+Motivée pour faire partie d'une équipe internationale et innovante, je serais ravie de rejoindre Sonceboz et de continuer d'apprendre tout en contribuant à fournir des produits impactant, aux patients du monde entier.
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+
+\end{document}
